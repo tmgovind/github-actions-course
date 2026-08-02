@@ -1,8 +1,20 @@
 name: basic-workflow-01
 on: push
 jobs:
-  first-job:
+  echo-hello:
     runs-on: ubuntu-latest
     steps:
-      -name: Say Hello
-       run: echo 'Hello World!'
+      - name: Say Hello
+        run:  echo "Hello World!"
+        
+  echo-goodbye:
+    runs-on:
+    steps:
+      - name: Failed Step
+        run: |
+          echo 'I will fail'
+          exit 1
+
+      - name: Never Execute
+        run: echo 'Say Goodbye!'
+                
