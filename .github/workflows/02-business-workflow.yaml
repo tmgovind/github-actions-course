@@ -1,0 +1,9 @@
+name: 02-business-workflow
+on: push
+
+jobs:
+  job-event-reporter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: report-jobs
+        run: echo 'This job gets triggered by the event - ${{github.event_name}}' 
