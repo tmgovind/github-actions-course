@@ -1,0 +1,19 @@
+name: 03-environment-vars
+run-name: 03-environment-variables.yaml Demo
+
+on:
+  push:
+  workflow_dispatch:
+
+env:
+  MY_VAR: Workflow Level
+  MY_VAR_OVERWRITTEN: Workflow Level
+
+jobs:
+  echo_vars:
+    steps:
+      - name: Printing Vars at Job level
+        run:|
+          echo "The variables are " ${{MY_VAR}}
+	  echo "The variables are " ${{MY_VAR_OVERWRITTEN}}	
+          
