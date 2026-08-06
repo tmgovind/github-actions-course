@@ -1,5 +1,11 @@
 name: basic-workflow-01
-on: push
+on: 
+  workflow_dispatch:
+    inputs:
+      debug:
+        type: boolean
+        default: false
+
 jobs:
   echo-hello:
     runs-on: ubuntu-latest
