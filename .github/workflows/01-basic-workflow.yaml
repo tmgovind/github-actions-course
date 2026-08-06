@@ -1,5 +1,6 @@
 name: basic-workflow-01
-on: push
+on: 
+  workflow_dispatch:
 jobs:
   echo-hello:
     runs-on: ubuntu-latest
