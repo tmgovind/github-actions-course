@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
 
 env:
-  MY_VAR: Workflow Level
-  MY_VAR_OVERWRITTEN: Workflow Level overwrite
+  MY_VAR: "Workflow Level"
+  MY_VAR_OVERWRITTEN: "Workflow Level overwrite"
 
 jobs:
   echo_vars:
