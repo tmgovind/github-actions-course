@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Printing Vars at Job level
-	run: echo "${{MY_VAR}}"      
+        run: echo " THis is my environment variable ${{vars.MY_VAR}}"      
