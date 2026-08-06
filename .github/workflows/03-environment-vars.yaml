@@ -13,7 +13,7 @@ jobs:
   echo_vars:
     steps:
       - name: Printing Vars at Job level
-        run:|
+        run: |
           echo "The variables are " ${{MY_VAR}}
-	   echo "The variables are " ${{MY_VAR_OVERWRITTEN}}	
+		  echo "The variables are " ${{MY_VAR_OVERWRITTEN}}	
           
